@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>PWA Fire Codelabs - How to build 100% PWA using Angular 6+ and Schematic</title>
+    <title>PWA Fire Codelabs - How To build 100% PWA Using Angular 6+ And Schematic</title>
     <meta name="description" content="In this codelab we are going to build PWA using Angular & Schematic (ng add),
     Firebase and PWA standards. We're presenting how do it from scratch and get 100% progressive app.">
     <meta name="twitter:image" content="https://pwafire.org/images/pwafire-apps.jpg">
@@ -26,25 +26,25 @@
     <link rel="icon" sizes="192x192" href="https://pwafire.org/developer/images/icons/icon-192x192.png">
     <!-- Fallback to homescreen for Chrome <39 on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="PWA Fire">
+    <meta name="application-name" content="PWAFire.Org">
     <link rel="icon" sizes="192x192" href="https://pwafire.org/images/icons/icon-192x192.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="PWA Fire">
+    <meta name="apple-mobile-web-app-title" content="PWAFire.Org">
     <link rel="apple-touch-icon" href="https://pwafire.org/images/icons/pwafire32white.png">
     <meta name="theme-color" content="#fff">
     <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/pwafire32white.png">
     <!-- codelab sharing meta data -->
-    <meta property="og:title" content="PWA Fire Codelabs - Make Your PWA sharable with Web Share API">
-    <meta property="og:site_name" content="PWA Fire Codelabs - Make Your PWA sharable with Web Share API">
+    <meta property="og:title" content="PWA Fire Codelabs - How To build 100% PWA Using Angular 6+ And Schematic">
+    <meta property="og:site_name" content="PWA Fire Codelabs - How To build 100% PWA Using Angular 6+ And Schematic">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="In this codelab you will learn how to use the Web Share API which allows you easily trigger the native Android share dialog, passing either a URL or text to share.">
+    <meta property="og:description" content="In this codelab we are going to build PWA using Angular & Schematic (ng add),     Firebase and PWA standards. We're presenting how do it from scratch and get 100% progressive app.">
     <meta property="og:image" content="https://pwafire.org/images/pwafire-apps.jpg">
     <meta property="og:image:type" content="image/png" />
     <meta name="theme-color" content="#fff">
     <!-- canonical url -->
-    <link rel="canonical" href="http://pwafire.org/developer/codelabs/pwafire/">
+    <link rel="canonical" href="http://pwafire.org/developer/codelabs/build-your-first-angular-progressive-web-app/">
     <!-- Page styles -->
     <link rel="stylesheet" href="https://pwafire.org/developer/pwa/assets/prism-default.css">
     <link rel="stylesheet" href="https://pwafire.org/developer/pwa/material.min.css">
@@ -97,7 +97,7 @@
         <li><a href="#build">Build Angular app</a></li>
         <li><a href="#create-firebase">Create Firebase project</a></li>
         <li><a href="#deploy">Deploy your app</a></li>
-        <li><a href="#test">Test your PWA</a></li>
+        <li><a href="#test">Test your progressive web app</a></li>
 
       </ul>
     </nav>
@@ -193,12 +193,12 @@
     <section id="create-firebase">
         <h3>Create Firebase project</h3>
         <div class="section-content">
-            <p>To test PWA and get 100% progressive app we need served our project via https. To do this we use super easy
-            method - Firebase hosting.</p>
-            <p>Log in firebase and create new project in <a href="https://console.firebase.google.com">firebase console</a>. If you don't have and account, register.</p>
+            <p>To test PWA and get 100% progressive app we need served our project via <b>https.</b> To do this we use super easy
+            method - <a href="../firebase-hosting-web/" target="_blank" rel="noopenner">Firebase hosting.</a></p>
+            <p>Log in <a href="https://console.firebase.google.com" target="_blank" rel="noopenner">Firebase</a> and create new project in <a href="https://console.firebase.google.com">Firebase Console</a>. If you don't have and account, register.</p>
             <p>Log to firebase locally using command line: </p>
             <pre>firebase login</pre>
-            <p>Init firebase project locally. Set proper project name, function: hosting and directory with bundle created during building process (dist/pwa-ng).</p>
+            <p>Init Firebase Project locally. Set proper project name, function: hosting and directory with bundle created during building process (dist/pwa-ng).</p>
             <pre>firebase init</pre>
         </div>
     </section>
@@ -208,21 +208,21 @@
             <p>It's time to deploy your app. Let's do it!</p>
             <pre>firebase deploy</pre>
             <p>Run deployed project in a browser. If deploy process was successful you should have hosting URL. Let's run it!</p>
-            <img src="assets/1.png" alt="" style="width: 100%;">
+            <img src="assets/1.png" alt="" style="width: 100%;"><br>
             <p>Open application tab and check if manifest.json is added and Service Worker registered.</p>
-            <img src="assets/2.png" alt="" style="width: 100%;">
+            <img src="assets/2.png" alt="" style="width: 100%;"><br>
             <p></p>
         </div>
     </section>
     <section id="test">
         <h3>Test your PWA</h3>
         <div class="section-content">
-            <p>Check if your app can work Offline:</p>
-            <img src="assets/3.png" alt="" style="width: 100%;">
+            <p>Check if your app can work Offline:</p><br>
+            <img src="assets/3.png" alt="" style="width: 100%;"><br>
             <p>Run audit tests using Lighthouse. Open tools for Developers in Chrome, select tab 'Audit' and  check Progressive Web App option. Run test and check the results.</p>
-            <img src="assets/4.png" alt="" style="width: 100%;">
-            <p>Oh yeah! We got 100% PWA!</p>
-            <img src="assets/5.png" alt="" style="width: 100%;">
+            <img src="assets/4.png" alt="" style="width: 100%;"><br>
+            <p>Oh yeah! We got 100% Progressive Web App!</p>
+            <img src="assets/5.png" alt="" style="width: 100%;"><br>
             <p>Celebration time! :)</p>
         </div>
     </section>
@@ -234,17 +234,9 @@
       <a href="https://github.com/mayeedwin/pwafire/fork" class="mdl-color-text--grey-50">FORK ON GITHUB</a>            
       </section>
       <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
-        <ul>
-          <li class="mdl-mini-footer--social-btn">
-            <a href="https://twitter.com/pwafire" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
-          </li>
-          <li class="mdl-mini-footer--social-btn">
-            <a href="https://github.com/mayeedwin/pwafire" class="social-btn social-btn__github" role="button" title="GitHub"></a>
-          </li>
-          <li class="mdl-mini-footer--social-btn">
-              <a href="https://twitter.com/mayeedwin1" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
-            </li>
-        </ul>
+        <div class="section-content">
+        <p>Built with love using Material Design Lite</p>
+          </div>
       </footer>
     </main>
   </div>
